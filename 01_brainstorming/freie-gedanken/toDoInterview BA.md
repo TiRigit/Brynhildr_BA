@@ -1,0 +1,1 @@
+#ich empfange Fragen aus /Users/tr/workspace/projects/bachelorarbeit-bruenhild/00_system/web App/frontend/workbench.html und reagiere wie folgt: wenn meine Antwort Ja ist: weiter zur nächsten Frage; wenn meine Antwort nein ist: frage in ToDoList.txt speichern

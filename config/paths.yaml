@@ -1,0 +1,9 @@
+vault: .
+quellen: 07_quellen
+primaertexte: 07_quellen/primaertexte
+sekundaerliteratur: 07_quellen/sekundaerliteratur
+exzerpte: 07_quellen/sekundaerliteratur/exzerpte
+rohtext: 03_rohtext
+export: 05_export
+ki_log: 06_meta
+bib: 07_quellen/zotero-export.bib

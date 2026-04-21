@@ -1,0 +1,24 @@
+roles:
+  orchestrator:
+    provider: anthropic
+    model: claude-opus-4-7
+
+  heavy_local:
+    provider: ollama
+    model: gpt-oss:20b           # vorläufig — Sitzung 6: durch qwen2.5:14b ersetzen
+
+  light_local:
+    provider: ollama
+    model: mistral:latest
+
+  embedding:
+    provider: ollama
+    model: nomic-embed-text      # vorläufig — Sitzung 6: durch bge-m3 ersetzen
+
+  translation:
+    provider: ollama
+    model: gpt-oss:20b
+
+  ocr_layout:
+    provider: local_binary
+    model: marker                # noch nicht installiert

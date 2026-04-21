@@ -1,0 +1,40 @@
+filters:
+  or:
+    - file.inFolder("03_rohtext")
+    - file.inFolder("02_konzept")
+    - file.inFolder("01_brainstorming")
+
+properties:
+  file.name:
+    displayName: Datei
+  file.mtime:
+    displayName: Geändert
+  file.size:
+    displayName: Größe (Bytes)
+
+views:
+  - type: table
+    name: Rohtext-Kapitel
+    filters:
+      and:
+        - file.inFolder("03_rohtext")
+    order:
+      - file.name
+      - file.size
+      - file.mtime
+
+  - type: table
+    name: Konzept
+    filters:
+      and:
+        - file.inFolder("02_konzept")
+    order:
+      - file.name
+      - file.size
+      - file.mtime
+
+  - type: table
+    name: Alle Arbeitsdateien
+    order:
+      - file.name
+      - file.mtime

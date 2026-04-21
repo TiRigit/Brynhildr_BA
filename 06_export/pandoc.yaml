@@ -1,0 +1,31 @@
+# Pandoc Defaults — Uni Potsdam Formatierungsstandard 2019
+# Verwendung: pandoc --defaults=05_export/pandoc.yaml
+
+from: markdown
+standalone: true
+
+metadata:
+  lang: de-DE
+
+# Bibliografie
+bibliography: 07_quellen/zotero-export.bib
+csl: 00_system/prompts/chicago-fullnote-bibliography.csl
+
+# PDF via XeLaTeX (für direkte PDF-Ausgabe)
+pdf-engine: xelatex
+
+variables:
+  documentclass: scrartcl
+  papersize: a4
+  fontsize: 12pt
+  mainfont: "Times New Roman"
+  linestretch: 1.5
+  geometry:
+    - top=2.5cm
+    - bottom=2.5cm
+    - left=2.5cm
+    - right=3cm
+  indent: true
+  numbersections: true
+  toc: false
+  lang: de-DE
